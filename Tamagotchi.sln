@@ -5,8 +5,6 @@ VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsForms", "WindowsForms\WindowsForms.csproj", "{847DD1F1-5CE7-4487-A876-1930F97FA2BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsForms", "G:\С#\Новая папка\Tamagotchi\WindowsForms\WindowsForms.csproj", "{CC409DDB-E19B-40A9-871B-BA298904519B}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{847DD1F1-5CE7-4487-A876-1930F97FA2BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{847DD1F1-5CE7-4487-A876-1930F97FA2BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{847DD1F1-5CE7-4487-A876-1930F97FA2BD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CC409DDB-E19B-40A9-871B-BA298904519B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CC409DDB-E19B-40A9-871B-BA298904519B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CC409DDB-E19B-40A9-871B-BA298904519B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CC409DDB-E19B-40A9-871B-BA298904519B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
