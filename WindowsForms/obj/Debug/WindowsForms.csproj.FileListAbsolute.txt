@@ -1,0 +1,13 @@
+G:\С#\Tamagotchi\WindowsForms\obj\Debug\WindowsForms.csprojResolveAssemblyReference.cache
+G:\С#\Tamagotchi\WindowsForms\obj\Debug\Tamagotchi.CreateTam.resources
+G:\С#\Tamagotchi\WindowsForms\obj\Debug\Tamagotchi.GamePoligon.resources
+G:\С#\Tamagotchi\WindowsForms\obj\Debug\WindowsForms.Properties.Resources.resources
+G:\С#\Tamagotchi\WindowsForms\obj\Debug\WindowsForms.csproj.GenerateResource.Cache
+G:\С#\Tamagotchi\WindowsForms\obj\Debug\WindowsForms.csproj.CoreCompileInputs.cache
+G:\С#\Tamagotchi\WindowsForms\bin\Debug\WindowsForms.exe.config
+G:\С#\Tamagotchi\WindowsForms\bin\Debug\WindowsForms.exe
+G:\С#\Tamagotchi\WindowsForms\bin\Debug\WindowsForms.pdb
+G:\С#\Tamagotchi\WindowsForms\obj\Debug\WindowsForms.exe
+G:\С#\Tamagotchi\WindowsForms\obj\Debug\WindowsForms.pdb
+G:\С#\Tamagotchi\WindowsForms\obj\Debug\Tamagotchi.Main.resources
+G:\С#\Tamagotchi\WindowsForms\obj\Debug\Tamagotchi.Shop.resources

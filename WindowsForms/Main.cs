@@ -22,11 +22,5 @@ namespace Tamagotchi
             CreateTam createTam = new CreateTam();
             createTam.Show();
         }
-        private void button2_Click_1(object sender, EventArgs e)
-        {
-            GamePoligon poligon = new GamePoligon();
-            poligon.SetTypeBear("Panda");
-            poligon.Show();
-        }
     }
 }

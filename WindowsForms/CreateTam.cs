@@ -14,7 +14,7 @@ namespace Tamagotchi
     public partial class CreateTam : Form
     {
         String typeBear = "";
-        public GamePoligon poligon;
+        GamePoligon poligon;
 
         public CreateTam()
         {
@@ -27,7 +27,7 @@ namespace Tamagotchi
 
         private void CreateTam_Load(object sender, EventArgs e)
         {
-            SoundPlayer sound = new SoundPlayer(@"..\..\..\s1.wav");
+            SoundPlayer sound = new SoundPlayer(@"G:\С#\Tamagotchi\s1.wav");
             sound.Play();
         }
 

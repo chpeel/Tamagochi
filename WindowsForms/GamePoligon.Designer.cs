@@ -155,7 +155,7 @@
             this.pictureBoxWhile.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxWhile.BackgroundImage")));
             this.pictureBoxWhile.Location = new System.Drawing.Point(378, 124);
             this.pictureBoxWhile.Name = "pictureBoxWhile";
-            this.pictureBoxWhile.Size = new System.Drawing.Size(243, 433);
+            this.pictureBoxWhile.Size = new System.Drawing.Size(254, 433);
             this.pictureBoxWhile.TabIndex = 0;
             this.pictureBoxWhile.TabStop = false;
             this.pictureBoxWhile.Visible = false;
@@ -166,20 +166,19 @@
             this.pictureBoxGrizz.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxGrizz.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxGrizz.BackgroundImage")));
             this.pictureBoxGrizz.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBoxGrizz.Location = new System.Drawing.Point(362, 256);
+            this.pictureBoxGrizz.Location = new System.Drawing.Point(296, 232);
             this.pictureBoxGrizz.Name = "pictureBoxGrizz";
             this.pictureBoxGrizz.Size = new System.Drawing.Size(259, 301);
             this.pictureBoxGrizz.TabIndex = 11;
             this.pictureBoxGrizz.TabStop = false;
             this.pictureBoxGrizz.Visible = false;
-            this.pictureBoxGrizz.Click += new System.EventHandler(this.pictureBoxGrizz_Click);
             // 
             // pictureBoxPanda
             // 
             this.pictureBoxPanda.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxPanda.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxPanda.BackgroundImage")));
             this.pictureBoxPanda.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBoxPanda.Location = new System.Drawing.Point(399, 232);
+            this.pictureBoxPanda.Location = new System.Drawing.Point(498, 232);
             this.pictureBoxPanda.Name = "pictureBoxPanda";
             this.pictureBoxPanda.Size = new System.Drawing.Size(207, 325);
             this.pictureBoxPanda.TabIndex = 12;

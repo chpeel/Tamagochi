@@ -40,6 +40,7 @@ namespace Tamagotchi
             labelMood.Text = progressBarMood.Value.ToString() + "%";
             label1.Text = $"Количество листиков: {Convert.ToString(bear.Money-Price)}";
         }
+
         private void pictureBoxTam_Click(object sender, EventArgs e)
         {
 
@@ -83,7 +84,7 @@ namespace Tamagotchi
             {
                 progressBarHealth.Value = progressBarHealth.Value - 30;
             }
-            if (progressBarHealth.Value <= 0) MessageBox.Show("Ваш мишка умер!", "Сообщение");
+            if (progressBarHealth.Value == 0) MessageBox.Show("Ваш мишка умер!", "Сообщение");
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -93,17 +94,11 @@ namespace Tamagotchi
         private void button1_Click(object sender, EventArgs e)
         {
             Shop shop = new Shop();
-            shop.Owner = this;
             shop.Show();
         }
 
        
         private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBoxGrizz_Click(object sender, EventArgs e)
         {
 
         }
