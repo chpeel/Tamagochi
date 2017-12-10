@@ -31,6 +31,12 @@ namespace Tamagotchi
             get { return progressBarSatiety.Value; }
         }
 
+        public int Mood
+        {
+            set { progressBarMood.Value = value; }
+            get { return progressBarMood.Value; }
+        }
+
         public GamePoligon()
         {
             InitializeComponent();
@@ -82,7 +88,7 @@ namespace Tamagotchi
             progressBarSleeping.PerformStep();
             if (progressBarHealth.Value == 0 || progressBarHygiene.Value == 0 || progressBarNuturalNeed.Value == 0 || progressBarSatiety.Value == 0 || progressBarMood.Value == 0)
             {
-                progressBarHealth.Value = progressBarHealth.Value - 30;
+                progressBarHealth.Value = progressBarHealth.Value - 20;
             }
             if (progressBarHealth.Value == 0) MessageBox.Show("Ваш мишка умер!", "Сообщение");
         }
@@ -94,11 +100,44 @@ namespace Tamagotchi
         private void button1_Click(object sender, EventArgs e)
         {
             Shop shop = new Shop();
+            shop.Owner = this;
             shop.Show();
         }
 
        
         private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBoxGrizz_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void progressBarSatiety_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            progressBarHygiene.Value += 5;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Enterainment entertainment = new Enterainment();
+            entertainment.Owner = this;
+            entertainment.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            progressBarNuturalNeed.Value += 5;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
         {
 
         }

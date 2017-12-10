@@ -12,8 +12,8 @@ namespace Tamagotchi
 {
     public partial class Shop : Form
     {
+        Bear bear = new Bear();
         int price;
-        int index;
         public Shop()
         {
             InitializeComponent();
@@ -24,13 +24,17 @@ namespace Tamagotchi
             foreach(ListViewItem q in listView1.SelectedItems)
             {
                 price = Convert.ToInt32(q.Text);
-                index = q.ImageIndex;
             }
-            GamePoligon gamePoligon = new GamePoligon();
-            gamePoligon.Price = price;
-            gamePoligon.Satiety = gamePoligon.Satiety+ 5;
+            GamePoligon gamePolygon = (GamePoligon)this.Owner;
+            gamePolygon.Price += price;
+            gamePolygon.progressBarSatiety.Value += price;
+            gamePolygon.label1.Text = $"Количество листиков: {Convert.ToString(bear.Money - gamePolygon.Price)}";
             this.Close();
         }
-        
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

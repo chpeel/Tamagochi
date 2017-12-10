@@ -45,6 +45,7 @@
             this.textBoxNameTam.Name = "textBoxNameTam";
             this.textBoxNameTam.Size = new System.Drawing.Size(199, 35);
             this.textBoxNameTam.TabIndex = 0;
+            this.textBoxNameTam.TextChanged += new System.EventHandler(this.textBoxNameTam_TextChanged);
             // 
             // labelNameTam
             // 

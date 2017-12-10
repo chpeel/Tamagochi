@@ -50,6 +50,10 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.labelMood = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWhile)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGrizz)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPanda)).BeginInit();
@@ -73,6 +77,7 @@
             this.progressBarSatiety.Step = -10;
             this.progressBarSatiety.TabIndex = 3;
             this.progressBarSatiety.Value = 100;
+            this.progressBarSatiety.Click += new System.EventHandler(this.progressBarSatiety_Click);
             // 
             // progressBarSleeping
             // 
@@ -155,7 +160,7 @@
             this.pictureBoxWhile.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxWhile.BackgroundImage")));
             this.pictureBoxWhile.Location = new System.Drawing.Point(378, 124);
             this.pictureBoxWhile.Name = "pictureBoxWhile";
-            this.pictureBoxWhile.Size = new System.Drawing.Size(254, 433);
+            this.pictureBoxWhile.Size = new System.Drawing.Size(243, 433);
             this.pictureBoxWhile.TabIndex = 0;
             this.pictureBoxWhile.TabStop = false;
             this.pictureBoxWhile.Visible = false;
@@ -166,19 +171,20 @@
             this.pictureBoxGrizz.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxGrizz.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxGrizz.BackgroundImage")));
             this.pictureBoxGrizz.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBoxGrizz.Location = new System.Drawing.Point(296, 232);
+            this.pictureBoxGrizz.Location = new System.Drawing.Point(362, 256);
             this.pictureBoxGrizz.Name = "pictureBoxGrizz";
             this.pictureBoxGrizz.Size = new System.Drawing.Size(259, 301);
             this.pictureBoxGrizz.TabIndex = 11;
             this.pictureBoxGrizz.TabStop = false;
             this.pictureBoxGrizz.Visible = false;
+            this.pictureBoxGrizz.Click += new System.EventHandler(this.pictureBoxGrizz_Click);
             // 
             // pictureBoxPanda
             // 
             this.pictureBoxPanda.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxPanda.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxPanda.BackgroundImage")));
             this.pictureBoxPanda.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBoxPanda.Location = new System.Drawing.Point(498, 232);
+            this.pictureBoxPanda.Location = new System.Drawing.Point(399, 232);
             this.pictureBoxPanda.Name = "pictureBoxPanda";
             this.pictureBoxPanda.Size = new System.Drawing.Size(207, 325);
             this.pictureBoxPanda.TabIndex = 12;
@@ -248,12 +254,60 @@
             this.labelMood.Size = new System.Drawing.Size(0, 17);
             this.labelMood.TabIndex = 19;
             // 
+            // button3
+            // 
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.Location = new System.Drawing.Point(813, 430);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(203, 44);
+            this.button3.TabIndex = 20;
+            this.button3.Text = "Помыться";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.Location = new System.Drawing.Point(813, 380);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(204, 44);
+            this.button4.TabIndex = 21;
+            this.button4.Text = "Поиграть с Медведем";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button5
+            // 
+            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
+            this.button5.Location = new System.Drawing.Point(814, 332);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(202, 42);
+            this.button5.TabIndex = 22;
+            this.button5.Text = "Поспать";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button6
+            // 
+            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
+            this.button6.Location = new System.Drawing.Point(814, 285);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(202, 41);
+            this.button6.TabIndex = 23;
+            this.button6.Text = "Сходить в туалет";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // GamePoligon
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1045, 569);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.labelMood);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -305,5 +359,9 @@
         private System.Windows.Forms.Label labelMood;
         public System.Windows.Forms.Label label1;
         public System.Windows.Forms.ProgressBar progressBarSatiety;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
     }
 }
