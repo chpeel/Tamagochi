@@ -27,7 +27,7 @@ namespace Tamagotchi
 
         private void CreateTam_Load(object sender, EventArgs e)
         {
-            SoundPlayer sound = new SoundPlayer(@"C:\Users\User\Desktop\Tamagotchi\s1.wav");
+            SoundPlayer sound = new SoundPlayer(@"..\..\..\s1.wav");
             sound.Play();
         }
 
@@ -53,13 +53,9 @@ namespace Tamagotchi
         {
             poligon= new GamePoligon();
             poligon.SetTypeBear(typeBear);
+            poligon.SetNameBear(textBoxNameTam.Text);
             this.Close();
             poligon.Show();
-        }
-
-        private void textBoxNameTam_TextChanged(object sender, EventArgs e)
-        {
-            
         }
     }
 }

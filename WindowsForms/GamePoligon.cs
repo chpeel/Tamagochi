@@ -24,32 +24,24 @@ namespace Tamagotchi
             get { return price; }
             set { price = value; }
         }
-
-        public int Satiety
-        {
-            set { progressBarSatiety.Value = value; }
-            get { return progressBarSatiety.Value; }
-        }
-
-        public int Mood
-        {
-            set { progressBarMood.Value = value; }
-            get { return progressBarMood.Value; }
-        }
-
+       
         public GamePoligon()
         {
             InitializeComponent();
-            timer.Interval = 6000;
+            timer.Interval = 60000;
             timer.Enabled = true;
             timer.Tick += timerHealth_Tick;
-            labelMood.Text = progressBarMood.Value.ToString() + "%";
-            label1.Text = $"Количество листиков: {Convert.ToString(bear.Money-Price)}";
+            label1.Text = $"Количество листиков: {Convert.ToString(bear.Money)}";
         }
 
         private void pictureBoxTam_Click(object sender, EventArgs e)
         {
 
+        }
+
+        public void SetNameBear(string name)
+        {
+            bear.Name = name;
         }
 
         public void SetTypeBear(string tp)
@@ -72,11 +64,11 @@ namespace Tamagotchi
                 pictureBoxPanda.Visible = true;
             }
             createTam.Close();
+            label8.Text = bear.Name;
         }
 
         private void progressBarHealth_Click(object sender, EventArgs e)
         {
-
         }
 
         private void timerHealth_Tick(object sender, EventArgs e)
@@ -91,6 +83,12 @@ namespace Tamagotchi
                 progressBarHealth.Value = progressBarHealth.Value - 20;
             }
             if (progressBarHealth.Value == 0) MessageBox.Show("Ваш мишка умер!", "Сообщение");
+            labelMood.Text = progressBarMood.Value.ToString() + "%";
+            labelHealth.Text = progressBarHealth.Value.ToString() + "%";
+            labelSatiety.Text = progressBarSatiety.Value.ToString() + "%";
+            labelNutural_Need.Text = progressBarNuturalNeed.Value.ToString() + "%";
+            labelSleeping.Text = progressBarSleeping.Value.ToString() + "%";
+            labelHygiene.Text = progressBarHygiene.Value.ToString() + "%";
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -101,6 +99,7 @@ namespace Tamagotchi
         {
             Shop shop = new Shop();
             shop.Owner = this;
+            label1.Text = $"Количество листиков: {Convert.ToString(bear.Money-price)}";
             shop.Show();
         }
 
@@ -117,29 +116,27 @@ namespace Tamagotchi
 
         private void progressBarSatiety_Click(object sender, EventArgs e)
         {
-
+            
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void labelSatiety_Click(object sender, EventArgs e)
         {
-            progressBarHygiene.Value += 5;
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            Enterainment entertainment = new Enterainment();
-            entertainment.Owner = this;
-            entertainment.Show();
+            
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            progressBarNuturalNeed.Value += 5;
+            progressBarNuturalNeed.Value = 100;
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
+            progressBarSleeping.Value = 100;
+        }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            progressBarHygiene.Value = 100;
         }
     }
 }

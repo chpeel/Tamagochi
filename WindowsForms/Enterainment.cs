@@ -25,7 +25,7 @@ namespace Tamagotchi
                 mood = Convert.ToInt32(q.Text);
             }
             GamePoligon gamePolygon = (GamePoligon)this.Owner;
-            gamePolygon.Mood += mood;
+            //gamePolygon.Mood += mood;
             this.Close();
         }
 

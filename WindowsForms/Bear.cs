@@ -20,17 +20,7 @@ namespace Tamagotchi
         private int money = 100;
         private String[] desires = new String[] { "Хочу пить", "Хочу чего-нибудь сладенького", "Съесть бы чего-нибудь" };//желания
 
-        public Bear(string name, int health, int sleeping, int satiety, int hygiene, int nutural_need,int mood,int money)
-        {
-            this.health = health;
-            this.hygiene = hygiene;
-            this.money = money;
-            this.name = name;
-            this.natural_need = natural_need;
-            this.satiety = satiety;
-            this.mood = mood;
-        }
-
+      
         public Bear(string name, string type)
         {
             this.name = name;

@@ -32,6 +32,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.buttonExist = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,13 +59,22 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(385, 258);
+            this.button2.Location = new System.Drawing.Point(385, 243);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(162, 46);
             this.button2.TabIndex = 2;
             this.button2.Text = "Продолжить";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // buttonExist
+            // 
+            this.buttonExist.Location = new System.Drawing.Point(385, 296);
+            this.buttonExist.Name = "buttonExist";
+            this.buttonExist.Size = new System.Drawing.Size(162, 43);
+            this.buttonExist.TabIndex = 3;
+            this.buttonExist.Text = "Выход";
+            this.buttonExist.UseVisualStyleBackColor = true;
+            this.buttonExist.Click += new System.EventHandler(this.buttonExist_Click);
             // 
             // Main
             // 
@@ -73,6 +83,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(935, 437);
+            this.Controls.Add(this.buttonExist);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
@@ -88,5 +99,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonExist;
     }
 }
