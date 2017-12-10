@@ -1,0 +1,11 @@
+G:\С#\Tamagotchi\Tamagotchi\bin\Debug\Tamagotchi.exe.config
+G:\С#\Tamagotchi\Tamagotchi\bin\Debug\Tamagotchi.exe
+G:\С#\Tamagotchi\Tamagotchi\bin\Debug\Tamagotchi.pdb
+G:\С#\Tamagotchi\Tamagotchi\obj\Debug\Tamagotchi.csprojResolveAssemblyReference.cache
+G:\С#\Tamagotchi\Tamagotchi\obj\Debug\Tamagotchi.CreateTam.resources
+G:\С#\Tamagotchi\Tamagotchi\obj\Debug\Tamagotchi.GamePoligon.resources
+G:\С#\Tamagotchi\Tamagotchi\obj\Debug\Tamagotchi.Properties.Resources.resources
+G:\С#\Tamagotchi\Tamagotchi\obj\Debug\Tamagotchi.csproj.GenerateResource.Cache
+G:\С#\Tamagotchi\Tamagotchi\obj\Debug\Tamagotchi.csproj.CoreCompileInputs.cache
+G:\С#\Tamagotchi\Tamagotchi\obj\Debug\Tamagotchi.exe
+G:\С#\Tamagotchi\Tamagotchi\obj\Debug\Tamagotchi.pdb
