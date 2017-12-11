@@ -76,7 +76,7 @@
             listViewItem5,
             listViewItem6});
             this.listView1.LargeImageList = this.imageList1;
-            this.listView1.Location = new System.Drawing.Point(39, 34);
+            this.listView1.Location = new System.Drawing.Point(39, 37);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(347, 313);
             this.listView1.SmallImageList = this.imageList1;

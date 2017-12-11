@@ -20,13 +20,12 @@ namespace Tamagotchi
         private void button1_Click(object sender, EventArgs e)
         {
             CreateTam createTam = new CreateTam();
-            createTam.Owner = this;
             createTam.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void buttonExist_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }

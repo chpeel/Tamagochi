@@ -12,8 +12,9 @@ namespace Tamagotchi
 {
     public partial class Shop : Form
     {
-        Bear bear = new Bear();
         int price;
+        Bear bear = new Bear();
+
         public Shop()
         {
             InitializeComponent();
@@ -29,6 +30,7 @@ namespace Tamagotchi
             gamePolygon.Price += price;
             gamePolygon.progressBarSatiety.Value += price;
             gamePolygon.label1.Text = $"Количество листиков: {Convert.ToString(bear.Money - gamePolygon.Price)}";
+            gamePolygon.labelSatiety.Text = gamePolygon.progressBarSatiety.Value.ToString() + "%";
             this.Close();
         }
 

@@ -40,12 +40,12 @@
             // 
             // textBoxNameTam
             // 
+            this.textBoxNameTam.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxNameTam.Location = new System.Drawing.Point(402, 38);
             this.textBoxNameTam.Multiline = true;
             this.textBoxNameTam.Name = "textBoxNameTam";
-            this.textBoxNameTam.Size = new System.Drawing.Size(199, 35);
+            this.textBoxNameTam.Size = new System.Drawing.Size(192, 31);
             this.textBoxNameTam.TabIndex = 0;
-            this.textBoxNameTam.TextChanged += new System.EventHandler(this.textBoxNameTam_TextChanged);
             // 
             // labelNameTam
             // 
@@ -133,9 +133,9 @@
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(409, 597);
+            this.button1.Location = new System.Drawing.Point(402, 597);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(255, 81);
+            this.button1.Size = new System.Drawing.Size(269, 81);
             this.button1.TabIndex = 10;
             this.button1.Text = "Сохранить";
             this.button1.UseVisualStyleBackColor = false;
