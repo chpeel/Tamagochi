@@ -35,30 +35,17 @@ C:\Users\User\Desktop\Tamagotchi\WindowsForms\obj\Debug\Tamagotchi.Shop.resource
 C:\Users\User\Desktop\Tamagotchi\WindowsForms\obj\Debug\WindowsForms.csproj.GenerateResource.Cache
 C:\Users\User\Desktop\Tamagotchi\WindowsForms\obj\Debug\WindowsForms.exe
 C:\Users\User\Desktop\Tamagotchi\WindowsForms\obj\Debug\WindowsForms.pdb
-C:\Users\User\Desktop\Tamagotchi\WindowsForms\obj\Debug\Tamagotchi.Enterainment.resources
-E:\SashaZ\3sem\game\Tamagotchi\WindowsForms\bin\Debug\WindowsForms.exe.config
-E:\SashaZ\3sem\game\Tamagotchi\WindowsForms\bin\Debug\WindowsForms.exe
-E:\SashaZ\3sem\game\Tamagotchi\WindowsForms\bin\Debug\WindowsForms.pdb
-E:\SashaZ\3sem\game\Tamagotchi\WindowsForms\obj\Debug\WindowsForms.csprojResolveAssemblyReference.cache
-E:\SashaZ\3sem\game\Tamagotchi\WindowsForms\obj\Debug\Tamagotchi.CreateTam.resources
-E:\SashaZ\3sem\game\Tamagotchi\WindowsForms\obj\Debug\Tamagotchi.Enterainment.resources
-E:\SashaZ\3sem\game\Tamagotchi\WindowsForms\obj\Debug\Tamagotchi.GamePoligon.resources
-E:\SashaZ\3sem\game\Tamagotchi\WindowsForms\obj\Debug\Tamagotchi.Main.resources
-E:\SashaZ\3sem\game\Tamagotchi\WindowsForms\obj\Debug\WindowsForms.Properties.Resources.resources
-E:\SashaZ\3sem\game\Tamagotchi\WindowsForms\obj\Debug\Tamagotchi.Shop.resources
-E:\SashaZ\3sem\game\Tamagotchi\WindowsForms\obj\Debug\WindowsForms.csproj.GenerateResource.Cache
-E:\SashaZ\3sem\game\Tamagotchi\WindowsForms\obj\Debug\WindowsForms.exe
-E:\SashaZ\3sem\game\Tamagotchi\WindowsForms\obj\Debug\WindowsForms.pdb
-E:\SashaZ\3sem\game\Tamagochi\WindowsForms\bin\Debug\WindowsForms.exe.config
-E:\SashaZ\3sem\game\Tamagochi\WindowsForms\bin\Debug\WindowsForms.exe
-E:\SashaZ\3sem\game\Tamagochi\WindowsForms\bin\Debug\WindowsForms.pdb
-E:\SashaZ\3sem\game\Tamagochi\WindowsForms\obj\Debug\WindowsForms.csprojResolveAssemblyReference.cache
-E:\SashaZ\3sem\game\Tamagochi\WindowsForms\obj\Debug\Tamagotchi.CreateTam.resources
-E:\SashaZ\3sem\game\Tamagochi\WindowsForms\obj\Debug\Tamagotchi.Enterainment.resources
-E:\SashaZ\3sem\game\Tamagochi\WindowsForms\obj\Debug\Tamagotchi.GamePoligon.resources
-E:\SashaZ\3sem\game\Tamagochi\WindowsForms\obj\Debug\Tamagotchi.Main.resources
-E:\SashaZ\3sem\game\Tamagochi\WindowsForms\obj\Debug\WindowsForms.Properties.Resources.resources
-E:\SashaZ\3sem\game\Tamagochi\WindowsForms\obj\Debug\Tamagotchi.Shop.resources
-E:\SashaZ\3sem\game\Tamagochi\WindowsForms\obj\Debug\WindowsForms.csproj.GenerateResource.Cache
-E:\SashaZ\3sem\game\Tamagochi\WindowsForms\obj\Debug\WindowsForms.exe
-E:\SashaZ\3sem\game\Tamagochi\WindowsForms\obj\Debug\WindowsForms.pdb
+G:\С#\Новая папка\Tamagotchi\WindowsForms\bin\Debug\WindowsForms.exe.config
+G:\С#\Новая папка\Tamagotchi\WindowsForms\bin\Debug\WindowsForms.exe
+G:\С#\Новая папка\Tamagotchi\WindowsForms\bin\Debug\WindowsForms.pdb
+G:\С#\Новая папка\Tamagotchi\WindowsForms\obj\Debug\WindowsForms.csprojResolveAssemblyReference.cache
+G:\С#\Новая папка\Tamagotchi\WindowsForms\obj\Debug\Tamagotchi.CreateTam.resources
+G:\С#\Новая папка\Tamagotchi\WindowsForms\obj\Debug\Tamagotchi.GamePoligon.resources
+G:\С#\Новая папка\Tamagotchi\WindowsForms\obj\Debug\Tamagotchi.Main.resources
+G:\С#\Новая папка\Tamagotchi\WindowsForms\obj\Debug\WindowsForms.Properties.Resources.resources
+G:\С#\Новая папка\Tamagotchi\WindowsForms\obj\Debug\Tamagotchi.Shop.resources
+G:\С#\Новая папка\Tamagotchi\WindowsForms\obj\Debug\WindowsForms.csproj.GenerateResource.Cache
+G:\С#\Новая папка\Tamagotchi\WindowsForms\obj\Debug\WindowsForms.csproj.CoreCompileInputs.cache
+G:\С#\Новая папка\Tamagotchi\WindowsForms\obj\Debug\WindowsForms.exe
+G:\С#\Новая папка\Tamagotchi\WindowsForms\obj\Debug\WindowsForms.pdb
+G:\С#\Новая папка\Tamagotchi\WindowsForms\obj\Debug\Tamagotchi.Enterainment.resources

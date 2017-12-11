@@ -159,8 +159,9 @@
             this.labelNutural_Need.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.labelNutural_Need.Location = new System.Drawing.Point(903, 69);
             this.labelNutural_Need.Name = "labelNutural_Need";
-            this.labelNutural_Need.Size = new System.Drawing.Size(0, 17);
+            this.labelNutural_Need.Size = new System.Drawing.Size(44, 17);
             this.labelNutural_Need.TabIndex = 54;
+            this.labelNutural_Need.Text = "100%";
             // 
             // labelSatiety
             // 
@@ -168,8 +169,9 @@
             this.labelSatiety.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.labelSatiety.Location = new System.Drawing.Point(590, 69);
             this.labelSatiety.Name = "labelSatiety";
-            this.labelSatiety.Size = new System.Drawing.Size(0, 17);
+            this.labelSatiety.Size = new System.Drawing.Size(44, 17);
             this.labelSatiety.TabIndex = 53;
+            this.labelSatiety.Text = "100%";
             // 
             // labelSleeping
             // 
@@ -177,8 +179,9 @@
             this.labelSleeping.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.labelSleeping.Location = new System.Drawing.Point(449, 69);
             this.labelSleeping.Name = "labelSleeping";
-            this.labelSleeping.Size = new System.Drawing.Size(0, 17);
+            this.labelSleeping.Size = new System.Drawing.Size(44, 17);
             this.labelSleeping.TabIndex = 52;
+            this.labelSleeping.Text = "100%";
             // 
             // labelHygiene
             // 
@@ -186,8 +189,9 @@
             this.labelHygiene.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.labelHygiene.Location = new System.Drawing.Point(299, 69);
             this.labelHygiene.Name = "labelHygiene";
-            this.labelHygiene.Size = new System.Drawing.Size(0, 17);
+            this.labelHygiene.Size = new System.Drawing.Size(44, 17);
             this.labelHygiene.TabIndex = 51;
+            this.labelHygiene.Text = "100%";
             // 
             // labelHealth
             // 
@@ -195,8 +199,9 @@
             this.labelHealth.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.labelHealth.Location = new System.Drawing.Point(164, 69);
             this.labelHealth.Name = "labelHealth";
-            this.labelHealth.Size = new System.Drawing.Size(0, 17);
+            this.labelHealth.Size = new System.Drawing.Size(44, 17);
             this.labelHealth.TabIndex = 50;
+            this.labelHealth.Text = "100%";
             // 
             // label8
             // 
@@ -213,11 +218,12 @@
             // labelMood
             // 
             this.labelMood.AutoSize = true;
-            this.labelMood.BackColor = System.Drawing.Color.Green;
+            this.labelMood.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.labelMood.Location = new System.Drawing.Point(764, 75);
             this.labelMood.Name = "labelMood";
-            this.labelMood.Size = new System.Drawing.Size(0, 17);
+            this.labelMood.Size = new System.Drawing.Size(44, 17);
             this.labelMood.TabIndex = 48;
+            this.labelMood.Text = "100%";
             // 
             // label7
             // 
@@ -327,7 +333,7 @@
             // progressBarNuturalNeed
             // 
             this.progressBarNuturalNeed.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.progressBarNuturalNeed.Location = new System.Drawing.Point(878, 69);
+            this.progressBarNuturalNeed.Location = new System.Drawing.Point(881, 69);
             this.progressBarNuturalNeed.Name = "progressBarNuturalNeed";
             this.progressBarNuturalNeed.Size = new System.Drawing.Size(100, 23);
             this.progressBarNuturalNeed.Step = -10;
@@ -337,7 +343,7 @@
             // progressBarMood
             // 
             this.progressBarMood.BackColor = System.Drawing.Color.Green;
-            this.progressBarMood.Location = new System.Drawing.Point(724, 69);
+            this.progressBarMood.Location = new System.Drawing.Point(724, 75);
             this.progressBarMood.Name = "progressBarMood";
             this.progressBarMood.Size = new System.Drawing.Size(100, 23);
             this.progressBarMood.Step = -10;
@@ -346,7 +352,7 @@
             // 
             // progressBarHygiene
             // 
-            this.progressBarHygiene.Location = new System.Drawing.Point(275, 69);
+            this.progressBarHygiene.Location = new System.Drawing.Point(278, 69);
             this.progressBarHygiene.Name = "progressBarHygiene";
             this.progressBarHygiene.Size = new System.Drawing.Size(100, 23);
             this.progressBarHygiene.Step = -10;
@@ -355,12 +361,13 @@
             // 
             // progressBarSleeping
             // 
-            this.progressBarSleeping.Location = new System.Drawing.Point(425, 69);
+            this.progressBarSleeping.Location = new System.Drawing.Point(428, 69);
             this.progressBarSleeping.Name = "progressBarSleeping";
             this.progressBarSleeping.Size = new System.Drawing.Size(100, 23);
             this.progressBarSleeping.Step = -10;
             this.progressBarSleeping.TabIndex = 33;
             this.progressBarSleeping.Value = 100;
+            this.progressBarSleeping.Click += new System.EventHandler(this.progressBarSleeping_Click);
             // 
             // progressBarSatiety
             // 
@@ -373,7 +380,7 @@
             // 
             // progressBarHealth
             // 
-            this.progressBarHealth.Location = new System.Drawing.Point(137, 69);
+            this.progressBarHealth.Location = new System.Drawing.Point(142, 69);
             this.progressBarHealth.Minimum = 20;
             this.progressBarHealth.Name = "progressBarHealth";
             this.progressBarHealth.Size = new System.Drawing.Size(100, 23);
@@ -439,7 +446,6 @@
         private System.Windows.Forms.Label labelHygiene;
         private System.Windows.Forms.Label labelHealth;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label labelMood;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
@@ -451,7 +457,6 @@
         private System.Windows.Forms.Button button1;
         public System.Windows.Forms.Label label1;
         private System.Windows.Forms.ProgressBar progressBarNuturalNeed;
-        private System.Windows.Forms.ProgressBar progressBarMood;
         private System.Windows.Forms.ProgressBar progressBarHygiene;
         private System.Windows.Forms.ProgressBar progressBarSleeping;
         public System.Windows.Forms.ProgressBar progressBarSatiety;
@@ -459,5 +464,7 @@
         private System.Windows.Forms.PictureBox pictureBoxWhile;
         private System.Windows.Forms.ProgressBar progressBarSleep;
         private System.Windows.Forms.Timer timer1;
+        public System.Windows.Forms.Label labelMood;
+        public System.Windows.Forms.ProgressBar progressBarMood;
     }
 }

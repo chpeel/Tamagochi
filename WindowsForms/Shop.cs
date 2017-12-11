@@ -29,7 +29,8 @@ namespace Tamagotchi
             GamePoligon gamePolygon = (GamePoligon)this.Owner;
             gamePolygon.Price += price;
             gamePolygon.progressBarSatiety.Value += price;
-            gamePolygon.label1.Text = $"Количество листиков: {Convert.ToString(bear.Money - gamePolygon.Price)}";
+            bear.Money = bear.Money - gamePolygon.Price;
+            gamePolygon.label1.Text = $"Количество листиков: {Convert.ToString(bear.Money)}";
             gamePolygon.labelSatiety.Text = gamePolygon.progressBarSatiety.Value.ToString() + "%";
             this.Close();
         }

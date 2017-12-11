@@ -13,25 +13,34 @@ namespace Tamagotchi
     public partial class Enterainment : Form
     {
         int mood;
+        int[] addMood = new int[] { 10, 5, 10 };
+
         public Enterainment()
         {
             InitializeComponent();
         }
-
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            foreach (ListViewItem q in listBox1.SelectedItems)
-            {
-                mood = Convert.ToInt32(q.Text);
-            }
-            GamePoligon gamePolygon = (GamePoligon)this.Owner;
-            //gamePolygon.Mood += mood;
-            this.Close();
-        }
+        
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int g = listBox1.SelectedIndex;
+            for (int i = 0; i < addMood.Length; i++)
+            {
+                if (g == i)
+                {
+                    mood = addMood[i];
+                    break;
+                }
+            }
+            GamePoligon gamePolygon = (GamePoligon)this.Owner;
+            gamePolygon.Mood += mood;
+            gamePolygon.labelMood.Text = gamePolygon.progressBarMood.Value.ToString() + "%";
+            this.Close();
         }
     }
 }

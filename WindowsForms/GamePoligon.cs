@@ -87,9 +87,17 @@ namespace Tamagotchi
             progressBarSleeping.PerformStep();
             if (progressBarHealth.Value == 0 || progressBarHygiene.Value == 0 || progressBarNuturalNeed.Value == 0 || progressBarSatiety.Value == 0 || progressBarMood.Value == 0)
             {
-                progressBarHealth.Value = progressBarHealth.Value - 20;
+                try
+                {
+                    progressBarHealth.Value = progressBarHealth.Value - 20;
+                }
+                catch (ArgumentOutOfRangeException)
+                {
+                    timer.Enabled = false;
+                    MessageBox.Show("Ваш мишка умер!", "Сообщение");
+                    this.Close();
+                }
             }
-            if (progressBarHealth.Value == 0) MessageBox.Show("Ваш мишка умер!", "Сообщение");
             labelMood.Text = progressBarMood.Value.ToString() + "%";
             labelHealth.Text = progressBarHealth.Value.ToString() + "%";
             labelSatiety.Text = progressBarSatiety.Value.ToString() + "%";
@@ -154,7 +162,9 @@ namespace Tamagotchi
 
         private void button4_Click_1(object sender, EventArgs e)
         {
-
+            Enterainment enterainment = new Enterainment();
+            enterainment.Owner = this;
+            enterainment.Show();
         }
 
         private void button3_Click_1(object sender, EventArgs e)
@@ -169,6 +179,11 @@ namespace Tamagotchi
             Shop shop = new Shop();
             shop.Owner = this;
             shop.Show();
+        }
+
+        private void progressBarSleeping_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
