@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
 using System.Resources;
+using System.IO;
 
 namespace Tamagotchi
 {
@@ -18,6 +19,7 @@ namespace Tamagotchi
         CreateTam createTam = new CreateTam();
         Bear bear = new Bear();
         int price;
+        bool flag = true;
 
         public int Price
         {
@@ -38,7 +40,6 @@ namespace Tamagotchi
             timer.Enabled = true;
             timer.Tick += timerHealth_Tick;
             label1.Text = $"Количество листиков: {Convert.ToString(bear.Money)}";
-            
         }
 
         private void pictureBoxTam_Click(object sender, EventArgs e)
@@ -56,9 +57,14 @@ namespace Tamagotchi
             bear.Type = tp;
         }
 
+        public int Money(int money)
+        {
+            return bear.Money += money;
+        }
+
         private void GamePoligon_Load(object sender, EventArgs e)
         {
-            if (bear.Type == "While")
+            if (bear.Type == "White")
             {
                 pictureBoxWhile.Visible = true;
             }
@@ -78,6 +84,11 @@ namespace Tamagotchi
         {
         }
 
+        public void qwe()
+        {
+
+        }
+
         private void timerHealth_Tick(object sender, EventArgs e)
         {
             progressBarHygiene.PerformStep();
@@ -85,7 +96,7 @@ namespace Tamagotchi
             progressBarNuturalNeed.PerformStep();
             progressBarSatiety.PerformStep();
             progressBarSleeping.PerformStep();
-            if (progressBarHealth.Value == 0 || progressBarHygiene.Value == 0 || progressBarNuturalNeed.Value == 0 || progressBarSatiety.Value == 0 || progressBarMood.Value == 0)
+            if (progressBarHygiene.Value == 0 || progressBarNuturalNeed.Value == 0 || progressBarSatiety.Value == 0 || progressBarSleeping.Value==0 || (progressBarMood.Value==0 && flag))
             {
                 try
                 {
@@ -94,6 +105,7 @@ namespace Tamagotchi
                 catch (ArgumentOutOfRangeException)
                 {
                     timer.Enabled = false;
+                    progressBarHealth.Value = 0;
                     MessageBox.Show("Ваш мишка умер!", "Сообщение");
                     this.Close();
                 }
@@ -133,6 +145,7 @@ namespace Tamagotchi
                 groupBox1.Visible = false;
                 progressBarSleep.Visible = true;
                 progressBarSleep.Location = new Point(230, 340);
+                labelSleeping.Text = progressBarSleeping.Value.ToString() + "%";
                 this.BackgroundImage = Image.FromFile(@"..\..\..\sleep.jpg");
                 timer1.Interval = 100;
                 timer1.Enabled = true;
@@ -156,7 +169,10 @@ namespace Tamagotchi
         private void button6_Click_1(object sender, EventArgs e)
         {
             if (progressBarNuturalNeed.Value < 50)
+            {
                 progressBarNuturalNeed.Value = 100;
+                labelNutural_Need.Text = progressBarNuturalNeed.Value.ToString() + "%";
+            }
             else MessageBox.Show("Ваш мишка не хочет в туалет!", "Сообщение");
         }
 
@@ -170,20 +186,54 @@ namespace Tamagotchi
         private void button3_Click_1(object sender, EventArgs e)
         {
             if (progressBarHygiene.Value < 50)
+            {
                 progressBarHygiene.Value = 100;
+                labelHygiene.Text = progressBarHygiene.Value.ToString() + "%";
+            }
             else MessageBox.Show("Ваш мишка не хочет умываться!", "Сообщение");
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            Shop shop = new Shop();
-            shop.Owner = this;
-            shop.Show();
+            if (progressBarSatiety.Value == 100)
+                MessageBox.Show("Ваш мишка не голоден", "Сообщение");
+            else
+            {
+                Shop shop = new Shop();
+                shop.Owner = this;
+                shop.Show();
+            }
         }
 
         private void progressBarSleeping_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            StreamWriter f = new StreamWriter("savefile.txt");
+            f.Write("{0} {1} {2} {3} {4} {5} {6} {7} {8}", bear.Name, bear.Type, bear.Money, progressBarHealth.Value, progressBarHygiene.Value, progressBarSleeping.Value, progressBarSatiety.Value, progressBarMood.Value, progressBarNuturalNeed.Value);
+            f.Close();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                progressBarMood.Value -= 10;
+                label1.Text = $"Количество листиков: {Convert.ToString(Money(10))}";
+                labelMood.Text = progressBarMood.Value.ToString() + "%";
+                if (progressBarMood.Value == 0 && flag)
+                {
+                    progressBarHealth.Value -= 20;
+                    flag = false;
+                }
+            }
+            catch (ArgumentOutOfRangeException)
+            {
+                MessageBox.Show("Ваш мишка не в настроении работать!", "Сообщение");
+            }
         }
     }
 }

@@ -39,7 +39,7 @@ namespace Tamagotchi
 
         private void buttonWhileBear_Click(object sender, EventArgs e)
         {
-            typeBear = "While";
+            typeBear = "White";
             MessageBox.Show("Самый лучший мишка!Выбор сделан!", "Сообщение");
         }
 

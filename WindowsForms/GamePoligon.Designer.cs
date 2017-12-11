@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GamePoligon));
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -62,6 +63,7 @@
             this.pictureBoxWhile = new System.Windows.Forms.PictureBox();
             this.progressBarSleep = new System.Windows.Forms.ProgressBar();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.button7 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPanda)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGrizz)).BeginInit();
@@ -75,6 +77,8 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.button7);
+            this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.button6);
             this.groupBox1.Controls.Add(this.button5);
             this.groupBox1.Controls.Add(this.button4);
@@ -108,6 +112,17 @@
             this.groupBox1.Size = new System.Drawing.Size(1185, 633);
             this.groupBox1.TabIndex = 30;
             this.groupBox1.TabStop = false;
+            // 
+            // button2
+            // 
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.Location = new System.Drawing.Point(53, 156);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(256, 79);
+            this.button2.TabIndex = 59;
+            this.button2.Text = "Сохранить";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button6
             // 
@@ -381,7 +396,6 @@
             // progressBarHealth
             // 
             this.progressBarHealth.Location = new System.Drawing.Point(142, 69);
-            this.progressBarHealth.Minimum = 20;
             this.progressBarHealth.Name = "progressBarHealth";
             this.progressBarHealth.Size = new System.Drawing.Size(100, 23);
             this.progressBarHealth.Step = -10;
@@ -411,6 +425,17 @@
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // button7
+            // 
+            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
+            this.button7.Location = new System.Drawing.Point(891, 496);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(201, 37);
+            this.button7.TabIndex = 60;
+            this.button7.Text = "Работа(+10 листиков)";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // GamePoligon
             // 
@@ -466,5 +491,7 @@
         private System.Windows.Forms.Timer timer1;
         public System.Windows.Forms.Label labelMood;
         public System.Windows.Forms.ProgressBar progressBarMood;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button7;
     }
 }

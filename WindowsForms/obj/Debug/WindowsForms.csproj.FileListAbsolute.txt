@@ -49,3 +49,17 @@ G:\С#\Новая папка\Tamagotchi\WindowsForms\obj\Debug\WindowsForms.cspr
 G:\С#\Новая папка\Tamagotchi\WindowsForms\obj\Debug\WindowsForms.exe
 G:\С#\Новая папка\Tamagotchi\WindowsForms\obj\Debug\WindowsForms.pdb
 G:\С#\Новая папка\Tamagotchi\WindowsForms\obj\Debug\Tamagotchi.Enterainment.resources
+C:\Users\Karina\Documents\GitHub\Tamagochi\WindowsForms\bin\Debug\WindowsForms.exe.config
+C:\Users\Karina\Documents\GitHub\Tamagochi\WindowsForms\bin\Debug\WindowsForms.exe
+C:\Users\Karina\Documents\GitHub\Tamagochi\WindowsForms\bin\Debug\WindowsForms.pdb
+C:\Users\Karina\Documents\GitHub\Tamagochi\WindowsForms\obj\Debug\WindowsForms.csprojResolveAssemblyReference.cache
+C:\Users\Karina\Documents\GitHub\Tamagochi\WindowsForms\obj\Debug\Tamagotchi.CreateTam.resources
+C:\Users\Karina\Documents\GitHub\Tamagochi\WindowsForms\obj\Debug\Tamagotchi.Enterainment.resources
+C:\Users\Karina\Documents\GitHub\Tamagochi\WindowsForms\obj\Debug\Tamagotchi.GamePoligon.resources
+C:\Users\Karina\Documents\GitHub\Tamagochi\WindowsForms\obj\Debug\Tamagotchi.Main.resources
+C:\Users\Karina\Documents\GitHub\Tamagochi\WindowsForms\obj\Debug\WindowsForms.Properties.Resources.resources
+C:\Users\Karina\Documents\GitHub\Tamagochi\WindowsForms\obj\Debug\Tamagotchi.Shop.resources
+C:\Users\Karina\Documents\GitHub\Tamagochi\WindowsForms\obj\Debug\WindowsForms.csproj.GenerateResource.Cache
+C:\Users\Karina\Documents\GitHub\Tamagochi\WindowsForms\obj\Debug\WindowsForms.csproj.CoreCompileInputs.cache
+C:\Users\Karina\Documents\GitHub\Tamagochi\WindowsForms\obj\Debug\WindowsForms.exe
+C:\Users\Karina\Documents\GitHub\Tamagochi\WindowsForms\obj\Debug\WindowsForms.pdb

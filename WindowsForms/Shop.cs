@@ -22,15 +22,21 @@ namespace Tamagotchi
 
         private void button1_Click(object sender, EventArgs e)
         {
-            foreach(ListViewItem q in listView1.SelectedItems)
+            foreach (ListViewItem q in listView1.SelectedItems)
             {
                 price = Convert.ToInt32(q.Text);
             }
             GamePoligon gamePolygon = (GamePoligon)this.Owner;
-            gamePolygon.Price += price;
-            gamePolygon.progressBarSatiety.Value += price;
-            bear.Money = bear.Money - gamePolygon.Price;
-            gamePolygon.label1.Text = $"Количество листиков: {Convert.ToString(bear.Money)}";
+            try
+            {
+                gamePolygon.progressBarSatiety.Value += price;
+            }
+            catch (System.ArgumentOutOfRangeException)
+            {
+                gamePolygon.progressBarSatiety.Value = 100;
+            }
+
+            gamePolygon.label1.Text = $"Количество листиков: {Convert.ToString(gamePolygon.Money(-price))}";
             gamePolygon.labelSatiety.Text = gamePolygon.progressBarSatiety.Value.ToString() + "%";
             this.Close();
         }

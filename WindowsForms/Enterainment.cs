@@ -38,8 +38,15 @@ namespace Tamagotchi
                 }
             }
             GamePoligon gamePolygon = (GamePoligon)this.Owner;
-            gamePolygon.Mood += mood;
-            gamePolygon.labelMood.Text = gamePolygon.progressBarMood.Value.ToString() + "%";
+            try
+            {
+                gamePolygon.Mood += mood;
+                gamePolygon.labelMood.Text = gamePolygon.progressBarMood.Value.ToString() + "%";
+            }
+            catch (System.ArgumentOutOfRangeException)
+            {
+                MessageBox.Show("Ваш мишка не хочет веселиться!", "Сообщение");
+            }
             this.Close();
         }
     }
