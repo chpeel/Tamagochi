@@ -51,11 +51,20 @@ namespace Tamagotchi
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            poligon= new GamePoligon();
-            poligon.SetTypeBear(typeBear);
-            poligon.SetNameBear(textBoxNameTam.Text);
-            this.Close();
-            poligon.Show();
+            if (textBoxNameTam.Text.Length == 0)
+            {
+                MessageBox.Show("Пожалуйста введите имя медведя");
+            }
+            else if (textBoxNameTam.Text.Length <= 15)
+            {
+                poligon = new GamePoligon();
+                poligon.SetTypeBear(typeBear);
+                poligon.SetNameBear(textBoxNameTam.Text);
+                this.Close();
+                poligon.Show();
+            }
+            else
+                MessageBox.Show("Имя не может содержать более 15 символов");
         }
     }
 }
