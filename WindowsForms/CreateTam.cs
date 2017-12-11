@@ -55,7 +55,11 @@ namespace Tamagotchi
             {
                 MessageBox.Show("Пожалуйста введите имя медведя");
             }
-            else if (textBoxNameTam.Text.Length <= 15)
+            else if (textBoxNameTam.Text.Length > 15)
+                MessageBox.Show("Имя не может содержать более 15 символов");
+            else if(typeBear=="")
+                MessageBox.Show("Пожалуйста выберите медведя");
+            else
             {
                 poligon = new GamePoligon();
                 poligon.SetTypeBear(typeBear);
@@ -63,8 +67,7 @@ namespace Tamagotchi
                 this.Close();
                 poligon.Show();
             }
-            else
-                MessageBox.Show("Имя не может содержать более 15 символов");
+            
         }
     }
 }
