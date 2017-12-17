@@ -46,7 +46,7 @@ namespace Tamagotchi
         private void buttonBeerPanda_Click(object sender, EventArgs e)
         {
             typeBear = "Panda";
-            MessageBox.Show("Самый лучший мишка!Выбор сделан!", "Сообщение");
+            MessageBox.Show("Самый лучший мишка!Выбор сдел ан!", "Сообщение");
         }
 
         private void button1_Click_1(object sender, EventArgs e)

@@ -30,12 +30,16 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Shop));
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("5", 4);
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("4", 2);
-            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("4", 6);
-            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("3", 0);
-            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem("3", 1);
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("10", 10);
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("12", 11);
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("13", 13);
+            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("20", 7);
+            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem("18", 12);
             System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem("10", 5);
+            System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem("13", 14);
+            System.Windows.Forms.ListViewItem listViewItem8 = new System.Windows.Forms.ListViewItem("20", 9);
+            System.Windows.Forms.ListViewItem listViewItem9 = new System.Windows.Forms.ListViewItem("25", 8);
+            System.Windows.Forms.ListViewItem listViewItem10 = new System.Windows.Forms.ListViewItem("12", 4);
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.button1 = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
@@ -52,11 +56,19 @@
             this.imageList1.Images.SetKeyName(4, "if-food-c227-2427865_85689.png");
             this.imageList1.Images.SetKeyName(5, "Tako-icon_30267.png");
             this.imageList1.Images.SetKeyName(6, "Watermelon_icon-icons.com_68672.png");
-            this.imageList1.Images.SetKeyName(7, "pizza-icon-256_icon-icons.com_75224.png");
+            this.imageList1.Images.SetKeyName(7, "icons8-хотдог-16.png");
+            this.imageList1.Images.SetKeyName(8, "icons8-гамбургер-16.png");
+            this.imageList1.Images.SetKeyName(9, "icons8-помидор-16.png");
+            this.imageList1.Images.SetKeyName(10, "icons8-картофель-фри-30.png");
+            this.imageList1.Images.SetKeyName(11, "icons8-банановый-сплит-40.png");
+            this.imageList1.Images.SetKeyName(12, "icons8-вишня-50.png");
+            this.imageList1.Images.SetKeyName(13, "icons8-горячий-шоколад-50.png");
+            this.imageList1.Images.SetKeyName(14, "icons8-слива-50.png");
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(136, 375);
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(155, 375);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(147, 41);
             this.button1.TabIndex = 6;
@@ -74,11 +86,15 @@
             listViewItem3,
             listViewItem4,
             listViewItem5,
-            listViewItem6});
+            listViewItem6,
+            listViewItem7,
+            listViewItem8,
+            listViewItem9,
+            listViewItem10});
             this.listView1.LargeImageList = this.imageList1;
             this.listView1.Location = new System.Drawing.Point(39, 37);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(347, 313);
+            this.listView1.Size = new System.Drawing.Size(382, 332);
             this.listView1.SmallImageList = this.imageList1;
             this.listView1.TabIndex = 8;
             this.listView1.UseCompatibleStateImageBehavior = false;
@@ -90,7 +106,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(423, 441);
+            this.ClientSize = new System.Drawing.Size(467, 453);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.button1);
             this.Name = "Shop";

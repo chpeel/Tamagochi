@@ -236,7 +236,7 @@
             this.label8.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label8.ForeColor = System.Drawing.Color.Tomato;
             this.label8.Image = ((System.Drawing.Image)(resources.GetObject("label8.Image")));
-            this.label8.Location = new System.Drawing.Point(137, 117);
+            this.label8.Location = new System.Drawing.Point(62, 248);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(0, 29);
             this.label8.TabIndex = 49;
@@ -351,7 +351,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(106, 446);
+            this.label1.Location = new System.Drawing.Point(62, 456);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 17);
             this.label1.TabIndex = 37;
