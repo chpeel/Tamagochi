@@ -84,11 +84,6 @@ namespace Tamagotchi
         {
         }
 
-        public void qwe()
-        {
-
-        }
-
         private void timerHealth_Tick(object sender, EventArgs e)
         {
             progressBarHygiene.PerformStep();
@@ -139,8 +134,6 @@ namespace Tamagotchi
 
         private void button5_Click_1(object sender, EventArgs e)
         {
-            if (progressBarSleeping.Value < 50)
-            {
                 progressBarSleeping.Value = 100;
                 groupBox1.Visible = false;
                 progressBarSleep.Visible = true;
@@ -150,8 +143,6 @@ namespace Tamagotchi
                 timer1.Interval = 100;
                 timer1.Enabled = true;
                 timer1.Tick += timer1_Tick;
-            }
-            else MessageBox.Show("Ваш мишка не хочет спать!", "Сообщение");
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -168,12 +159,8 @@ namespace Tamagotchi
 
         private void button6_Click_1(object sender, EventArgs e)
         {
-            if (progressBarNuturalNeed.Value < 50)
-            {
                 progressBarNuturalNeed.Value = 100;
                 labelNutural_Need.Text = progressBarNuturalNeed.Value.ToString() + "%";
-            }
-            else MessageBox.Show("Ваш мишка не хочет в туалет!", "Сообщение");
         }
 
         private void button4_Click_1(object sender, EventArgs e)
@@ -185,24 +172,15 @@ namespace Tamagotchi
 
         private void button3_Click_1(object sender, EventArgs e)
         {
-            if (progressBarHygiene.Value < 50)
-            {
                 progressBarHygiene.Value = 100;
                 labelHygiene.Text = progressBarHygiene.Value.ToString() + "%";
-            }
-            else MessageBox.Show("Ваш мишка не хочет умываться!", "Сообщение");
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            if (progressBarSatiety.Value == 100)
-                MessageBox.Show("Ваш мишка не голоден", "Сообщение");
-            else
-            {
                 Shop shop = new Shop();
                 shop.Owner = this;
                 shop.Show();
-            }
         }
 
         private void progressBarSleeping_Click(object sender, EventArgs e)

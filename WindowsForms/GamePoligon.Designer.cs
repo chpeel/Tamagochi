@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GamePoligon));
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button7 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -63,7 +64,6 @@
             this.pictureBoxWhile = new System.Windows.Forms.PictureBox();
             this.progressBarSleep = new System.Windows.Forms.ProgressBar();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.button7 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPanda)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGrizz)).BeginInit();
@@ -113,12 +113,23 @@
             this.groupBox1.TabIndex = 30;
             this.groupBox1.TabStop = false;
             // 
+            // button7
+            // 
+            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
+            this.button7.Location = new System.Drawing.Point(891, 496);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(201, 37);
+            this.button7.TabIndex = 60;
+            this.button7.Text = "Работа(+10 листиков)";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
             // button2
             // 
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.Location = new System.Drawing.Point(53, 156);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(256, 79);
+            this.button2.Size = new System.Drawing.Size(201, 61);
             this.button2.TabIndex = 59;
             this.button2.Text = "Сохранить";
             this.button2.UseVisualStyleBackColor = true;
@@ -234,7 +245,7 @@
             // 
             this.labelMood.AutoSize = true;
             this.labelMood.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.labelMood.Location = new System.Drawing.Point(764, 75);
+            this.labelMood.Location = new System.Drawing.Point(750, 69);
             this.labelMood.Name = "labelMood";
             this.labelMood.Size = new System.Drawing.Size(44, 17);
             this.labelMood.TabIndex = 48;
@@ -328,7 +339,7 @@
             // 
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(103, 496);
+            this.button1.Location = new System.Drawing.Point(53, 490);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(166, 48);
             this.button1.TabIndex = 38;
@@ -358,7 +369,7 @@
             // progressBarMood
             // 
             this.progressBarMood.BackColor = System.Drawing.Color.Green;
-            this.progressBarMood.Location = new System.Drawing.Point(724, 75);
+            this.progressBarMood.Location = new System.Drawing.Point(724, 69);
             this.progressBarMood.Name = "progressBarMood";
             this.progressBarMood.Size = new System.Drawing.Size(100, 23);
             this.progressBarMood.Step = -10;
@@ -398,7 +409,7 @@
             this.progressBarHealth.Location = new System.Drawing.Point(142, 69);
             this.progressBarHealth.Name = "progressBarHealth";
             this.progressBarHealth.Size = new System.Drawing.Size(100, 23);
-            this.progressBarHealth.Step = -10;
+            this.progressBarHealth.Step = 0;
             this.progressBarHealth.TabIndex = 31;
             this.progressBarHealth.Value = 100;
             // 
@@ -425,17 +436,6 @@
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // button7
-            // 
-            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
-            this.button7.Location = new System.Drawing.Point(891, 496);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(201, 37);
-            this.button7.TabIndex = 60;
-            this.button7.Text = "Работа(+10 листиков)";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // GamePoligon
             // 
