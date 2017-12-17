@@ -41,11 +41,13 @@
             // textBoxNameTam
             // 
             this.textBoxNameTam.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxNameTam.Location = new System.Drawing.Point(402, 38);
+            this.textBoxNameTam.Location = new System.Drawing.Point(401, 38);
+            this.textBoxNameTam.MaxLength = 15;
             this.textBoxNameTam.Multiline = true;
             this.textBoxNameTam.Name = "textBoxNameTam";
             this.textBoxNameTam.Size = new System.Drawing.Size(192, 31);
             this.textBoxNameTam.TabIndex = 0;
+            this.textBoxNameTam.TextChanged += new System.EventHandler(this.textBoxNameTam_TextChanged);
             // 
             // labelNameTam
             // 
@@ -54,7 +56,7 @@
             this.labelNameTam.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelNameTam.Location = new System.Drawing.Point(25, 38);
             this.labelNameTam.Name = "labelNameTam";
-            this.labelNameTam.Size = new System.Drawing.Size(282, 31);
+            this.labelNameTam.Size = new System.Drawing.Size(229, 26);
             this.labelNameTam.TabIndex = 1;
             this.labelNameTam.Text = "1.Назовите медведя!";
             // 
@@ -65,7 +67,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(26, 76);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(479, 58);
+            this.label1.Size = new System.Drawing.Size(383, 50);
             this.label1.TabIndex = 6;
             this.label1.Text = "2.Выберите медведя, нажав на его.\r\nПосле выбора медведя пути назад нет!";
             // 
