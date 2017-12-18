@@ -40,6 +40,10 @@
             System.Windows.Forms.ListViewItem listViewItem8 = new System.Windows.Forms.ListViewItem("20", 9);
             System.Windows.Forms.ListViewItem listViewItem9 = new System.Windows.Forms.ListViewItem("25", 8);
             System.Windows.Forms.ListViewItem listViewItem10 = new System.Windows.Forms.ListViewItem("12", 4);
+            System.Windows.Forms.ListViewItem listViewItem11 = new System.Windows.Forms.ListViewItem("10", 18);
+            System.Windows.Forms.ListViewItem listViewItem12 = new System.Windows.Forms.ListViewItem("30", 17);
+            System.Windows.Forms.ListViewItem listViewItem13 = new System.Windows.Forms.ListViewItem("18", 16);
+            System.Windows.Forms.ListViewItem listViewItem14 = new System.Windows.Forms.ListViewItem("10", 15);
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.button1 = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
@@ -64,6 +68,10 @@
             this.imageList1.Images.SetKeyName(12, "icons8-вишня-50.png");
             this.imageList1.Images.SetKeyName(13, "icons8-горячий-шоколад-50.png");
             this.imageList1.Images.SetKeyName(14, "icons8-слива-50.png");
+            this.imageList1.Images.SetKeyName(15, "icons8-кокосовый-коктейль-40.png");
+            this.imageList1.Images.SetKeyName(16, "icons8-мороженое-в-рожке-40.png");
+            this.imageList1.Images.SetKeyName(17, "icons8-суши-40.png");
+            this.imageList1.Images.SetKeyName(18, "icons8-цитрусовые-40.png");
             // 
             // button1
             // 
@@ -90,7 +98,11 @@
             listViewItem7,
             listViewItem8,
             listViewItem9,
-            listViewItem10});
+            listViewItem10,
+            listViewItem11,
+            listViewItem12,
+            listViewItem13,
+            listViewItem14});
             this.listView1.LargeImageList = this.imageList1;
             this.listView1.Location = new System.Drawing.Point(39, 37);
             this.listView1.Name = "listView1";

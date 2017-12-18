@@ -63,11 +63,12 @@
             this.progressBarHealth = new System.Windows.Forms.ProgressBar();
             this.pictureBoxWhile = new System.Windows.Forms.PictureBox();
             this.progressBarSleep = new System.Windows.Forms.ProgressBar();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPanda)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGrizz)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWhile)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // timer
@@ -77,6 +78,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.button7);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.button6);
@@ -112,13 +114,14 @@
             this.groupBox1.Size = new System.Drawing.Size(1185, 633);
             this.groupBox1.TabIndex = 30;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // button7
             // 
             this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
             this.button7.Location = new System.Drawing.Point(891, 496);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(201, 37);
+            this.button7.Size = new System.Drawing.Size(201, 42);
             this.button7.TabIndex = 60;
             this.button7.Text = "Работа(+10 листиков)";
             this.button7.UseVisualStyleBackColor = true;
@@ -351,7 +354,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(62, 456);
+            this.label1.Location = new System.Drawing.Point(100, 456);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 17);
             this.label1.TabIndex = 37;
@@ -433,9 +436,16 @@
             this.progressBarSleep.TabIndex = 59;
             this.progressBarSleep.Visible = false;
             // 
-            // timer1
+            // pictureBox1
             // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox1.Location = new System.Drawing.Point(53, 442);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(40, 38);
+            this.pictureBox1.TabIndex = 61;
+            this.pictureBox1.TabStop = false;
             // 
             // GamePoligon
             // 
@@ -454,6 +464,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPanda)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGrizz)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWhile)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -488,10 +499,10 @@
         private System.Windows.Forms.ProgressBar progressBarHealth;
         private System.Windows.Forms.PictureBox pictureBoxWhile;
         private System.Windows.Forms.ProgressBar progressBarSleep;
-        private System.Windows.Forms.Timer timer1;
         public System.Windows.Forms.Label labelMood;
         public System.Windows.Forms.ProgressBar progressBarMood;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

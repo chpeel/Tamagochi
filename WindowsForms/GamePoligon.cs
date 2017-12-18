@@ -111,6 +111,10 @@ namespace Tamagotchi
             labelNutural_Need.Text = progressBarNuturalNeed.Value.ToString() + "%";
             labelSleeping.Text = progressBarSleeping.Value.ToString() + "%";
             labelHygiene.Text = progressBarHygiene.Value.ToString() + "%";
+            if(progressBarMood.Value == 0)
+            {
+                MessageBox.Show("Из-за недостатка развлечений у вашего мишки появилась депрессия!Примите лекарства!","Болезнь!");
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -135,27 +139,9 @@ namespace Tamagotchi
         private void button5_Click_1(object sender, EventArgs e)
         {
                 progressBarSleeping.Value = 100;
-                groupBox1.Visible = false;
-                progressBarSleep.Visible = true;
-                progressBarSleep.Location = new Point(230, 340);
                 labelSleeping.Text = progressBarSleeping.Value.ToString() + "%";
-                this.BackgroundImage = Image.FromFile(@"..\..\..\sleep.jpg");
-                timer1.Interval = 100;
-                timer1.Enabled = true;
-                timer1.Tick += timer1_Tick;
         }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            progressBarSleep.PerformStep();
-            if (progressBarSleep.Value == 100)
-            {
-                timer1.Enabled = false;
-                progressBarSleep.Value = 0;
-                groupBox1.Visible = true;
-                progressBarSleep.Visible = false;
-            }
-        }
+        
 
         private void button6_Click_1(object sender, EventArgs e)
         {
@@ -212,6 +198,11 @@ namespace Tamagotchi
             {
                 MessageBox.Show("Ваш мишка не в настроении работать!", "Сообщение");
             }
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

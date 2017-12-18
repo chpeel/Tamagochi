@@ -13,28 +13,26 @@ namespace Tamagotchi
     public partial class Enterainment : Form
     {
         int mood;
-        int[] addMood = new int[] { 10, 5, 10 };
+        int[] qwe = new int[] { 10, 5, 15, 25, 10, 12, 5, 20, 40 };
 
         public Enterainment()
         {
             InitializeComponent();
         }
-        
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int g = listBox1.SelectedIndex;
-            for (int i = 0; i < addMood.Length; i++)
+            int g;
+            foreach (ListViewItem q in listView1.SelectedItems)
             {
-                if (g == i)
+                g = q.ImageIndex;
+                for(int i = 0; i < qwe.Length; i++)
                 {
-                    mood = addMood[i];
-                    break;
+                    if (i == g)
+                    {
+                        mood = qwe[i];
+                        break;
+                    }
                 }
             }
             GamePoligon gamePolygon = (GamePoligon)this.Owner;
@@ -45,9 +43,19 @@ namespace Tamagotchi
             }
             catch (System.ArgumentOutOfRangeException)
             {
-                MessageBox.Show("Ваш мишка не хочет веселиться!", "Сообщение");
+                gamePolygon.progressBarMood.Value = 100;
             }
             this.Close();
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Enterainment_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
