@@ -64,6 +64,7 @@
             this.pictureBoxWhile = new System.Windows.Forms.PictureBox();
             this.progressBarSleep = new System.Windows.Forms.ProgressBar();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button8 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPanda)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGrizz)).BeginInit();
@@ -78,6 +79,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.button8);
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.button7);
             this.groupBox1.Controls.Add(this.button2);
@@ -319,7 +321,7 @@
             this.pictureBoxPanda.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxPanda.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxPanda.BackgroundImage")));
             this.pictureBoxPanda.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBoxPanda.Location = new System.Drawing.Point(478, 248);
+            this.pictureBoxPanda.Location = new System.Drawing.Point(458, 242);
             this.pictureBoxPanda.Name = "pictureBoxPanda";
             this.pictureBoxPanda.Size = new System.Drawing.Size(207, 325);
             this.pictureBoxPanda.TabIndex = 41;
@@ -447,6 +449,17 @@
             this.pictureBox1.TabIndex = 61;
             this.pictureBox1.TabStop = false;
             // 
+            // button8
+            // 
+            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
+            this.button8.Location = new System.Drawing.Point(236, 492);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(203, 44);
+            this.button8.TabIndex = 62;
+            this.button8.Text = "Больница";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Visible = false;
+            // 
             // GamePoligon
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -504,5 +517,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button8;
     }
 }

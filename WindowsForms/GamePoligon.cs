@@ -140,9 +140,9 @@ namespace Tamagotchi
             labelNutural_Need.Text = progressBarNuturalNeed.Value.ToString() + "%";
             labelSleeping.Text = progressBarSleeping.Value.ToString() + "%";
             labelHygiene.Text = progressBarHygiene.Value.ToString() + "%";
-            if(progressBarMood.Value == 0)
+            if(progressBarHealth.Value == 50)
             {
-                MessageBox.Show("Из-за недостатка развлечений у вашего мишки появилась депрессия!Примите лекарства!","Болезнь!");
+                button8.Visible = true;
             }
         }
 
