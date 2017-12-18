@@ -27,5 +27,11 @@ namespace Tamagotchi
         {
             this.Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            GamePoligon createTam = new GamePoligon("savefile.txt");
+            createTam.Show();
+        }
     }
 }

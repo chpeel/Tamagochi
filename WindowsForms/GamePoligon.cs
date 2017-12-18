@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Media;
 using System.Resources;
 using System.IO;
+using System.Text.RegularExpressions;
 
 namespace Tamagotchi
 {
@@ -17,7 +18,7 @@ namespace Tamagotchi
     {
 
         CreateTam createTam = new CreateTam();
-        Bear bear = new Bear();
+        Bear bear;
         int price;
         bool flag = true;
 
@@ -35,13 +36,41 @@ namespace Tamagotchi
 
         public GamePoligon()
         {
+            bear = new Bear("", "", 100, 100, 100, 100, 100, 100, 100);
             InitializeComponent();
             timer.Interval = 10000;
             timer.Enabled = true;
             timer.Tick += timerHealth_Tick;
             label1.Text = $"Количество листиков: {Convert.ToString(bear.Money)}";
         }
-
+        public GamePoligon(string fileName)
+        {
+            StreamReader f = new StreamReader(fileName);
+            String strpat = @"[\s]";
+            Regex re = new Regex(strpat);
+            String[] element = re.Split(f.ReadToEnd());
+            f.Close();
+            bear = new Bear(element[0], element[1], Convert.ToInt32(element[2]), Convert.ToInt32(element[3]), Convert.ToInt32(element[4]), Convert.ToInt32(element[5]), Convert.ToInt32(element[6]), Convert.ToInt32(element[7]), Convert.ToInt32(element[8]));
+            SetTypeBear(element[1]);
+            SetNameBear(element[0]);
+            InitializeComponent();
+            progressBarHealth.Value = Convert.ToInt32(element[3]);
+            progressBarHygiene.Value = Convert.ToInt32(element[4]);
+            progressBarSleeping.Value = Convert.ToInt32(element[5]);
+            progressBarSatiety.Value = Convert.ToInt32(element[6]);
+            progressBarMood.Value = Convert.ToInt32(element[7]);
+            progressBarNuturalNeed.Value = Convert.ToInt32(element[8]);
+            labelMood.Text = progressBarMood.Value.ToString() + "%";
+            labelHealth.Text = progressBarHealth.Value.ToString() + "%";
+            labelSatiety.Text = progressBarSatiety.Value.ToString() + "%";
+            labelNutural_Need.Text = progressBarNuturalNeed.Value.ToString() + "%";
+            labelSleeping.Text = progressBarSleeping.Value.ToString() + "%";
+            labelHygiene.Text = progressBarHygiene.Value.ToString() + "%";
+            timer.Interval = 10000;
+            timer.Enabled = true;
+            timer.Tick += timerHealth_Tick;
+            label1.Text = $"Количество листиков: {Convert.ToString(bear.Money)}";
+        }
         private void pictureBoxTam_Click(object sender, EventArgs e)
         {
 

@@ -10,26 +10,40 @@ namespace Tamagotchi
     {
         string name;
         string type;
-        private int hygiene = 100;//гигиена
-        private int satiety = 100;//сытость
-        private int health = 100;//здоровье
-        private int sleeping = 100;//сон
-        private int natural_need = 100;//ествественные нужды
-        private int mood = 100;//настроение
+        private int hygiene;//гигиена
+        private int satiety;//сытость
+        private int health;//здоровье
+        private int sleeping;//сон
+        private int natural_need;//ествественные нужды
+        private int mood;//настроение
         //private int level;//уровень
-        private int money = 100;
+        private int money;
         private String[] desires = new String[] { "Хочу пить", "Хочу чего-нибудь сладенького", "Съесть бы чего-нибудь" };//желания
 
-      
-        public Bear(string name, string type)
+
+        public Bear(string name, string type, int money, int health, int hygiene, int sleep, int satiety, int mood, int natural_need)
         {
             this.name = name;
             this.type = type;
+            this.money = money;
+            this.health = health;
+            this.hygiene = hygiene;
+            this.sleeping = sleep;
+            this.satiety = satiety;
+            this.mood = mood;
+            this.natural_need = natural_need;
         }
-
         public Bear()
         {
-        }
+            money = 100;
+            health = 100;
+            hygiene = 100;
+            sleeping = 100;
+            satiety = 100;
+            mood = 100;
+            natural_need = 100;
+            }
+        
 
         public string Type
         {
