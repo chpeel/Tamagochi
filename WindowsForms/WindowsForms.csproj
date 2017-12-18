@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{847DD1F1-5CE7-4487-A876-1930F97FA2BD}</ProjectGuid>
+    <ProjectGuid>{CC409DDB-E19B-40A9-871B-BA298904519B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>WindowsForms</RootNamespace>
     <AssemblyName>WindowsForms</AssemblyName>
@@ -64,6 +64,12 @@
     <Compile Include="GamePoligon.Designer.cs">
       <DependentUpon>GamePoligon.cs</DependentUpon>
     </Compile>
+    <Compile Include="Madicine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Madicine.Designer.cs">
+      <DependentUpon>Madicine.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,9 @@
     <EmbeddedResource Include="GamePoligon.resx">
       <DependentUpon>GamePoligon.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Madicine.resx">
+      <DependentUpon>Madicine.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
@@ -98,6 +107,7 @@
     <EmbeddedResource Include="Shop.resx">
       <DependentUpon>Shop.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

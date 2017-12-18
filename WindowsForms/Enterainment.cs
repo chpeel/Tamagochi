@@ -25,7 +25,7 @@ namespace Tamagotchi
             int g;
             foreach (ListViewItem q in listView1.SelectedItems)
             {
-                g = q.ImageIndex;
+                g = q.Index;
                 for(int i = 0; i < qwe.Length; i++)
                 {
                     if (i == g)
