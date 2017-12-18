@@ -458,7 +458,7 @@
             this.button8.TabIndex = 62;
             this.button8.Text = "Больница";
             this.button8.UseVisualStyleBackColor = true;
-            this.button8.Visible = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // GamePoligon
             // 
@@ -493,7 +493,6 @@
         public System.Windows.Forms.Label labelSatiety;
         private System.Windows.Forms.Label labelSleeping;
         private System.Windows.Forms.Label labelHygiene;
-        private System.Windows.Forms.Label labelHealth;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
@@ -509,7 +508,6 @@
         private System.Windows.Forms.ProgressBar progressBarHygiene;
         private System.Windows.Forms.ProgressBar progressBarSleeping;
         public System.Windows.Forms.ProgressBar progressBarSatiety;
-        private System.Windows.Forms.ProgressBar progressBarHealth;
         private System.Windows.Forms.PictureBox pictureBoxWhile;
         private System.Windows.Forms.ProgressBar progressBarSleep;
         public System.Windows.Forms.Label labelMood;
@@ -518,5 +516,7 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button8;
+        public System.Windows.Forms.Label labelHealth;
+        public System.Windows.Forms.ProgressBar progressBarHealth;
     }
 }

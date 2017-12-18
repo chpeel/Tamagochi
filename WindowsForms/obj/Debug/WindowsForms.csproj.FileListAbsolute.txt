@@ -76,4 +76,4 @@ E:\SashaZ\3sem\game\Tamagochi\WindowsForms\obj\Debug\Tamagotchi.Shop.resources
 E:\SashaZ\3sem\game\Tamagochi\WindowsForms\obj\Debug\WindowsForms.csproj.GenerateResource.Cache
 E:\SashaZ\3sem\game\Tamagochi\WindowsForms\obj\Debug\WindowsForms.exe
 E:\SashaZ\3sem\game\Tamagochi\WindowsForms\obj\Debug\WindowsForms.pdb
-C:\Users\Karina\Documents\GitHub\Tamagochi\WindowsForms\obj\Debug\WindowsForms.Madicine.resources
+C:\Users\Karina\Documents\GitHub\Tamagochi\WindowsForms\obj\Debug\Tamagotchi.Medicine.resources

@@ -34,6 +34,12 @@ namespace Tamagotchi
             get { return progressBarMood.Value; }
         }
 
+        public int Health
+        {
+            set { progressBarHealth.Value = value; }
+            get { return progressBarHealth.Value; }
+        }
+
         public GamePoligon()
         {
             bear = new Bear("", "", 100, 100, 100, 100, 100, 100, 100);
@@ -140,10 +146,7 @@ namespace Tamagotchi
             labelNutural_Need.Text = progressBarNuturalNeed.Value.ToString() + "%";
             labelSleeping.Text = progressBarSleeping.Value.ToString() + "%";
             labelHygiene.Text = progressBarHygiene.Value.ToString() + "%";
-            if(progressBarHealth.Value == 50)
-            {
-                button8.Visible = true;
-            }
+           
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -232,6 +235,13 @@ namespace Tamagotchi
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Medicine med = new Medicine();
+            med.Owner = this;
+            med.Show();
         }
     }
 }

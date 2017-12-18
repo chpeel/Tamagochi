@@ -37,6 +37,7 @@ namespace Tamagotchi
             }
 
             gamePolygon.label1.Text = $"Количество листиков: {Convert.ToString(gamePolygon.Money(-price))}";
+            if(gamePolygon.Money(-price) <= 0) gamePolygon.label1.Text = $"Количество листиков: {Convert.ToString(gamePolygon.Money(0))}";
             gamePolygon.labelSatiety.Text = gamePolygon.progressBarSatiety.Value.ToString() + "%";
             this.Close();
         }
